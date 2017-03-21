@@ -87,15 +87,31 @@
 
 
 
-<meta name="description" content="自学iOS开发进阶博客，记录成长经验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="天净沙">
-<meta property="og:url" content="http://whyanger.github.io/index.html">
+<meta name="description" content="C语言中#define 宏定义的命令
+只是在预处理阶段对用#define 所定义的内容进行替换，不会检查数据类型
+讲的好的原文链接： iOS开发中你会用#define么?  
+##C 语言中的全局变量和局部变量
+全局变量和局部变量是按照变量的作用域来划分的。简单地说，局部变量是定义在函数内部的变量；全局变量是定义在函数之外的变量。全局变量可以为当前文件中其他函数所共用。
+在 C 语言中全局变量和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS中#define、static、const关键字">
+<meta property="og:url" content="http://whyanger.github.io/2017/03/22/iOS中-define、static、const关键字/index.html">
 <meta property="og:site_name" content="天净沙">
-<meta property="og:description" content="自学iOS开发进阶博客，记录成长经验">
+<meta property="og:description" content="C语言中#define 宏定义的命令
+只是在预处理阶段对用#define 所定义的内容进行替换，不会检查数据类型
+讲的好的原文链接： iOS开发中你会用#define么?  
+##C 语言中的全局变量和局部变量
+全局变量和局部变量是按照变量的作用域来划分的。简单地说，局部变量是定义在函数内部的变量；全局变量是定义在函数之外的变量。全局变量可以为当前文件中其他函数所共用。
+在 C 语言中全局变量和">
+<meta property="og:updated_time" content="2017-03-21T13:01:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="天净沙">
-<meta name="twitter:description" content="自学iOS开发进阶博客，记录成长经验">
+<meta name="twitter:title" content="iOS中#define、static、const关键字">
+<meta name="twitter:description" content="C语言中#define 宏定义的命令
+只是在预处理阶段对用#define 所定义的内容进行替换，不会检查数据类型
+讲的好的原文链接： iOS开发中你会用#define么?  
+##C 语言中的全局变量和局部变量
+全局变量和局部变量是按照变量的作用域来划分的。简单地说，局部变量是定义在函数内部的变量；全局变量是定义在函数之外的变量。全局变量可以为当前文件中其他函数所共用。
+在 C 语言中全局变量和">
 
 
 
@@ -123,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://whyanger.github.io/"/>
+  <link rel="canonical" href="http://whyanger.github.io/2017/03/22/iOS中-define、static、const关键字/"/>
 
 
 
 
 
-  <title> 天净沙 </title>
+  <title> iOS中#define、static、const关键字 | 天净沙 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,9 +170,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-   page-home 
- ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -269,9 +283,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -301,10 +315,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/22/iOS中-define、static、const关键字/" itemprop="url">
-                  iOS中#define、static、const关键字
-                </a>
+                iOS中#define、static、const关键字
               
             
           </h1>
@@ -319,7 +330,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-21T19:46:34Z">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-22T03:46:34+08:00">
                 2017-03-21
               </time>
             
@@ -339,6 +350,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
 
           
 
@@ -355,9 +371,7 @@
       
 
       
-        
-          
-            <ul>
+        <ul>
 <li><h2 id="C语言中-define-宏定义的命令"><a href="#C语言中-define-宏定义的命令" class="headerlink" title="C语言中#define 宏定义的命令"></a>C语言中#define 宏定义的命令</h2></li>
 <li>只是在预处理阶段对用#define 所定义的内容进行替换，不会检查数据类型</li>
 <li>讲的好的原文链接： <a href="http://www.jianshu.com/p/1cfb0083b420" target="_blank" rel="external">iOS开发中你会用#define么?</a>  </li>
@@ -425,20 +439,27 @@
 <p>//技巧: 先看“<em>”的位置<br>// 如果const 在 </em>的左侧 表示值不能修改，但是指向可以改。<br>// 如果const 在 <em>的右侧 表示指向不能改，但是值可以改<br>// 如果在“</em>”的两侧都有const 标识指向和值都不能改。<br>``` </p>
 <p>更多精彩，关注群号:529560119</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -446,150 +467,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://whyanger.github.io/2017/03/21/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王会阳">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="天净沙">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/21/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/03/21/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-21T10:16:22Z">
-                2017-03-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -597,6 +506,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -616,8 +529,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -690,6 +612,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C语言中-define-宏定义的命令"><span class="nav-number">1.</span> <span class="nav-text">C语言中#define 宏定义的命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#staitc-关键字"><span class="nav-number">2.</span> <span class="nav-text">staitc 关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#const-关键字"><span class="nav-number">3.</span> <span class="nav-text">const 关键字</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -815,6 +753,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
